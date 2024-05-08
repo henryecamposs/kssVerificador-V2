@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="kss.kssverificadorv2.ConfigActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linearLayout"
+        android:weightSum="1"
+        android:background="@color/color_Smoke"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.09"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/imageView4"
+                android:layout_gravity="left|center_vertical"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="EMPRESA DEMO, C.A."
+                android:id="@+id/lblEmpresa"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:textColor="@color/color_Negro" />
+
+        </FrameLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="0.09">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Dirección Servidor:"
+                    android:id="@+id/textView6"
+                    android:layout_column="0"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/color_Azul" />
+
+                <EditText
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDirServer"
+                    android:layout_column="1"
+                    android:text="http://Server/webapi_json_retail/handler1.ashx" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Tasa IVA1:"
+                    android:id="@+id/textView7"
+                    android:layout_column="0"
+                    android:textColor="@color/color_Azul" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_column="1">
+
+                    <EditText
+                        android:layout_width="87dp"
+                        android:layout_height="40dp"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/txtIVA1"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="12.00"
+                        android:textAlignment="center"
+                        android:textColorHighlight="@color/color_Rojo" />
+                </FrameLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_margin="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Tasa IVA2:"
+                    android:id="@+id/textView9"
+                    android:layout_column="0"
+                    android:textColor="@color/color_Azul" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_column="1" >
+
+                    <EditText
+                        android:layout_width="87dp"
+                        android:layout_height="40dp"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/txtIVA2"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="8.00"
+                        android:textAlignment="center"
+                        android:textColorHighlight="@color/color_Rojo" />
+                </FrameLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Tasa IVA3:"
+                    android:id="@+id/textView10"
+                    android:layout_column="0"
+                    android:textColor="@color/color_Azul" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical|top">
+
+                    <EditText
+                        android:layout_width="87dp"
+                        android:layout_height="40dp"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/txtIVA3"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="22.00"
+                        android:textAlignment="center"
+                        android:textColorHighlight="@color/color_Rojo" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Guardar"
+                        android:id="@+id/btnGuardar"
+                        android:layout_gravity="right|center_vertical"
+                        android:onClick="guardarPreferencias" />
+                </FrameLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TableRow>
+        </TableLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="right"
+            android:layout_weight="0.09"
+            android:id="@+id/frameLayout3"
+            android:background="@color/color_Blanco" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView6"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/ksslogo_banner1"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cerrar"
+                android:id="@+id/btnCerrar"
+                android:layout_gravity="center"
+                android:singleLine="false"
+                android:onClick="Cerrar" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>
